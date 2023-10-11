@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sjcha\\source\\repos\\SistemaInventario\\SistemaInventario\\SistemaInventario.csproj": {}
+    "C:\\Users\\sjcha\\Source\\Repos\\SigifredoChacon\\SistemaInventario\\SistemaInventario\\SistemaInventario.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sjcha\\source\\repos\\SistemaInventario\\SistemaInventario.AccesoDatos\\SistemaInventario.AccesoDatos.csproj": {
+    "C:\\Users\\sjcha\\Source\\Repos\\SigifredoChacon\\SistemaInventario\\SistemaInventario.AccesoDatos\\SistemaInventario.AccesoDatos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sjcha\\source\\repos\\SistemaInventario\\SistemaInventario.AccesoDatos\\SistemaInventario.AccesoDatos.csproj",
+        "projectUniqueName": "C:\\Users\\sjcha\\Source\\Repos\\SigifredoChacon\\SistemaInventario\\SistemaInventario.AccesoDatos\\SistemaInventario.AccesoDatos.csproj",
         "projectName": "SistemaInventario.AccesoDatos",
-        "projectPath": "C:\\Users\\sjcha\\source\\repos\\SistemaInventario\\SistemaInventario.AccesoDatos\\SistemaInventario.AccesoDatos.csproj",
+        "projectPath": "C:\\Users\\sjcha\\Source\\Repos\\SigifredoChacon\\SistemaInventario\\SistemaInventario.AccesoDatos\\SistemaInventario.AccesoDatos.csproj",
         "packagesPath": "C:\\Users\\sjcha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sjcha\\source\\repos\\SistemaInventario\\SistemaInventario.AccesoDatos\\obj\\",
+        "outputPath": "C:\\Users\\sjcha\\Source\\Repos\\SigifredoChacon\\SistemaInventario\\SistemaInventario.AccesoDatos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sjcha\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,11 +28,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\sjcha\\source\\repos\\SistemaInventario\\SistemaInventario.Modelo\\SistemaInventario.Modelo.csproj": {
-                "projectPath": "C:\\Users\\sjcha\\source\\repos\\SistemaInventario\\SistemaInventario.Modelo\\SistemaInventario.Modelo.csproj"
+              "C:\\Users\\sjcha\\Source\\Repos\\SigifredoChacon\\SistemaInventario\\SistemaInventario.Modelo\\SistemaInventario.Modelo.csproj": {
+                "projectPath": "C:\\Users\\sjcha\\Source\\Repos\\SigifredoChacon\\SistemaInventario\\SistemaInventario.Modelo\\SistemaInventario.Modelo.csproj"
               },
-              "C:\\Users\\sjcha\\source\\repos\\SistemaInventario\\SistemaInventario.Utilidades\\SistemaInventario.Utilidades.csproj": {
-                "projectPath": "C:\\Users\\sjcha\\source\\repos\\SistemaInventario\\SistemaInventario.Utilidades\\SistemaInventario.Utilidades.csproj"
+              "C:\\Users\\sjcha\\Source\\Repos\\SigifredoChacon\\SistemaInventario\\SistemaInventario.Utilidades\\SistemaInventario.Utilidades.csproj": {
+                "projectPath": "C:\\Users\\sjcha\\Source\\Repos\\SigifredoChacon\\SistemaInventario\\SistemaInventario.Utilidades\\SistemaInventario.Utilidades.csproj"
               }
             }
           }
@@ -84,14 +84,14 @@
         }
       }
     },
-    "C:\\Users\\sjcha\\source\\repos\\SistemaInventario\\SistemaInventario.Modelo\\SistemaInventario.Modelo.csproj": {
+    "C:\\Users\\sjcha\\Source\\Repos\\SigifredoChacon\\SistemaInventario\\SistemaInventario.Modelo\\SistemaInventario.Modelo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sjcha\\source\\repos\\SistemaInventario\\SistemaInventario.Modelo\\SistemaInventario.Modelo.csproj",
+        "projectUniqueName": "C:\\Users\\sjcha\\Source\\Repos\\SigifredoChacon\\SistemaInventario\\SistemaInventario.Modelo\\SistemaInventario.Modelo.csproj",
         "projectName": "SistemaInventario.Modelo",
-        "projectPath": "C:\\Users\\sjcha\\source\\repos\\SistemaInventario\\SistemaInventario.Modelo\\SistemaInventario.Modelo.csproj",
+        "projectPath": "C:\\Users\\sjcha\\Source\\Repos\\SigifredoChacon\\SistemaInventario\\SistemaInventario.Modelo\\SistemaInventario.Modelo.csproj",
         "packagesPath": "C:\\Users\\sjcha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sjcha\\source\\repos\\SistemaInventario\\SistemaInventario.Modelo\\obj\\",
+        "outputPath": "C:\\Users\\sjcha\\Source\\Repos\\SigifredoChacon\\SistemaInventario\\SistemaInventario.Modelo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sjcha\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -108,8 +108,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\sjcha\\source\\repos\\SistemaInventario\\SistemaInventario.Utilidades\\SistemaInventario.Utilidades.csproj": {
-                "projectPath": "C:\\Users\\sjcha\\source\\repos\\SistemaInventario\\SistemaInventario.Utilidades\\SistemaInventario.Utilidades.csproj"
+              "C:\\Users\\sjcha\\Source\\Repos\\SigifredoChacon\\SistemaInventario\\SistemaInventario.Utilidades\\SistemaInventario.Utilidades.csproj": {
+                "projectPath": "C:\\Users\\sjcha\\Source\\Repos\\SigifredoChacon\\SistemaInventario\\SistemaInventario.Utilidades\\SistemaInventario.Utilidades.csproj"
               }
             }
           }
@@ -143,14 +143,14 @@
         }
       }
     },
-    "C:\\Users\\sjcha\\source\\repos\\SistemaInventario\\SistemaInventario.Utilidades\\SistemaInventario.Utilidades.csproj": {
+    "C:\\Users\\sjcha\\Source\\Repos\\SigifredoChacon\\SistemaInventario\\SistemaInventario.Utilidades\\SistemaInventario.Utilidades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sjcha\\source\\repos\\SistemaInventario\\SistemaInventario.Utilidades\\SistemaInventario.Utilidades.csproj",
+        "projectUniqueName": "C:\\Users\\sjcha\\Source\\Repos\\SigifredoChacon\\SistemaInventario\\SistemaInventario.Utilidades\\SistemaInventario.Utilidades.csproj",
         "projectName": "SistemaInventario.Utilidades",
-        "projectPath": "C:\\Users\\sjcha\\source\\repos\\SistemaInventario\\SistemaInventario.Utilidades\\SistemaInventario.Utilidades.csproj",
+        "projectPath": "C:\\Users\\sjcha\\Source\\Repos\\SigifredoChacon\\SistemaInventario\\SistemaInventario.Utilidades\\SistemaInventario.Utilidades.csproj",
         "packagesPath": "C:\\Users\\sjcha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sjcha\\source\\repos\\SistemaInventario\\SistemaInventario.Utilidades\\obj\\",
+        "outputPath": "C:\\Users\\sjcha\\Source\\Repos\\SigifredoChacon\\SistemaInventario\\SistemaInventario.Utilidades\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sjcha\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -198,14 +198,14 @@
         }
       }
     },
-    "C:\\Users\\sjcha\\source\\repos\\SistemaInventario\\SistemaInventario\\SistemaInventario.csproj": {
+    "C:\\Users\\sjcha\\Source\\Repos\\SigifredoChacon\\SistemaInventario\\SistemaInventario\\SistemaInventario.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sjcha\\source\\repos\\SistemaInventario\\SistemaInventario\\SistemaInventario.csproj",
+        "projectUniqueName": "C:\\Users\\sjcha\\Source\\Repos\\SigifredoChacon\\SistemaInventario\\SistemaInventario\\SistemaInventario.csproj",
         "projectName": "SistemaInventario",
-        "projectPath": "C:\\Users\\sjcha\\source\\repos\\SistemaInventario\\SistemaInventario\\SistemaInventario.csproj",
+        "projectPath": "C:\\Users\\sjcha\\Source\\Repos\\SigifredoChacon\\SistemaInventario\\SistemaInventario\\SistemaInventario.csproj",
         "packagesPath": "C:\\Users\\sjcha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sjcha\\source\\repos\\SistemaInventario\\SistemaInventario\\obj\\",
+        "outputPath": "C:\\Users\\sjcha\\Source\\Repos\\SigifredoChacon\\SistemaInventario\\SistemaInventario\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sjcha\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -222,14 +222,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\sjcha\\source\\repos\\SistemaInventario\\SistemaInventario.AccesoDatos\\SistemaInventario.AccesoDatos.csproj": {
-                "projectPath": "C:\\Users\\sjcha\\source\\repos\\SistemaInventario\\SistemaInventario.AccesoDatos\\SistemaInventario.AccesoDatos.csproj"
+              "C:\\Users\\sjcha\\Source\\Repos\\SigifredoChacon\\SistemaInventario\\SistemaInventario.AccesoDatos\\SistemaInventario.AccesoDatos.csproj": {
+                "projectPath": "C:\\Users\\sjcha\\Source\\Repos\\SigifredoChacon\\SistemaInventario\\SistemaInventario.AccesoDatos\\SistemaInventario.AccesoDatos.csproj"
               },
-              "C:\\Users\\sjcha\\source\\repos\\SistemaInventario\\SistemaInventario.Modelo\\SistemaInventario.Modelo.csproj": {
-                "projectPath": "C:\\Users\\sjcha\\source\\repos\\SistemaInventario\\SistemaInventario.Modelo\\SistemaInventario.Modelo.csproj"
+              "C:\\Users\\sjcha\\Source\\Repos\\SigifredoChacon\\SistemaInventario\\SistemaInventario.Modelo\\SistemaInventario.Modelo.csproj": {
+                "projectPath": "C:\\Users\\sjcha\\Source\\Repos\\SigifredoChacon\\SistemaInventario\\SistemaInventario.Modelo\\SistemaInventario.Modelo.csproj"
               },
-              "C:\\Users\\sjcha\\source\\repos\\SistemaInventario\\SistemaInventario.Utilidades\\SistemaInventario.Utilidades.csproj": {
-                "projectPath": "C:\\Users\\sjcha\\source\\repos\\SistemaInventario\\SistemaInventario.Utilidades\\SistemaInventario.Utilidades.csproj"
+              "C:\\Users\\sjcha\\Source\\Repos\\SigifredoChacon\\SistemaInventario\\SistemaInventario.Utilidades\\SistemaInventario.Utilidades.csproj": {
+                "projectPath": "C:\\Users\\sjcha\\Source\\Repos\\SigifredoChacon\\SistemaInventario\\SistemaInventario.Utilidades\\SistemaInventario.Utilidades.csproj"
               }
             }
           }
@@ -269,6 +269,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.23, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.16, )"
             }
           },
           "imports": [
