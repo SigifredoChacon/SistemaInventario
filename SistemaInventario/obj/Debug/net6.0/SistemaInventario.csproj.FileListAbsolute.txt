@@ -91,8 +91,6 @@ C:\Users\sjcha\source\repos\SistemaInventario\SistemaInventario\bin\Debug\net6.0
 C:\Users\sjcha\source\repos\SistemaInventario\SistemaInventario\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Connections.Abstractions.dll
 C:\Users\sjcha\source\repos\SistemaInventario\SistemaInventario\bin\Debug\net6.0\refs\Microsoft.AspNetCore.CookiePolicy.dll
 C:\Users\sjcha\source\repos\SistemaInventario\SistemaInventario\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Cors.dll
-C:\Users\sjcha\source\repos\SistemaInventario\SistemaInventario\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Cryptography.Internal.dll
-C:\Users\sjcha\source\repos\SistemaInventario\SistemaInventario\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 C:\Users\sjcha\source\repos\SistemaInventario\SistemaInventario\bin\Debug\net6.0\refs\Microsoft.AspNetCore.DataProtection.Abstractions.dll
 C:\Users\sjcha\source\repos\SistemaInventario\SistemaInventario\bin\Debug\net6.0\refs\Microsoft.AspNetCore.DataProtection.dll
 C:\Users\sjcha\source\repos\SistemaInventario\SistemaInventario\bin\Debug\net6.0\refs\Microsoft.AspNetCore.DataProtection.Extensions.dll
@@ -176,14 +174,11 @@ C:\Users\sjcha\source\repos\SistemaInventario\SistemaInventario\bin\Debug\net6.0
 C:\Users\sjcha\source\repos\SistemaInventario\SistemaInventario\bin\Debug\net6.0\refs\Microsoft.Extensions.Features.dll
 C:\Users\sjcha\source\repos\SistemaInventario\SistemaInventario\bin\Debug\net6.0\refs\Microsoft.Extensions.FileProviders.Abstractions.dll
 C:\Users\sjcha\source\repos\SistemaInventario\SistemaInventario\bin\Debug\net6.0\refs\Microsoft.Extensions.FileProviders.Composite.dll
-C:\Users\sjcha\source\repos\SistemaInventario\SistemaInventario\bin\Debug\net6.0\refs\Microsoft.Extensions.FileProviders.Embedded.dll
 C:\Users\sjcha\source\repos\SistemaInventario\SistemaInventario\bin\Debug\net6.0\refs\Microsoft.Extensions.FileProviders.Physical.dll
 C:\Users\sjcha\source\repos\SistemaInventario\SistemaInventario\bin\Debug\net6.0\refs\Microsoft.Extensions.FileSystemGlobbing.dll
 C:\Users\sjcha\source\repos\SistemaInventario\SistemaInventario\bin\Debug\net6.0\refs\Microsoft.Extensions.Hosting.Abstractions.dll
 C:\Users\sjcha\source\repos\SistemaInventario\SistemaInventario\bin\Debug\net6.0\refs\Microsoft.Extensions.Hosting.dll
 C:\Users\sjcha\source\repos\SistemaInventario\SistemaInventario\bin\Debug\net6.0\refs\Microsoft.Extensions.Http.dll
-C:\Users\sjcha\source\repos\SistemaInventario\SistemaInventario\bin\Debug\net6.0\refs\Microsoft.Extensions.Identity.Core.dll
-C:\Users\sjcha\source\repos\SistemaInventario\SistemaInventario\bin\Debug\net6.0\refs\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\sjcha\source\repos\SistemaInventario\SistemaInventario\bin\Debug\net6.0\refs\Microsoft.Extensions.Localization.Abstractions.dll
 C:\Users\sjcha\source\repos\SistemaInventario\SistemaInventario\bin\Debug\net6.0\refs\Microsoft.Extensions.Localization.dll
 C:\Users\sjcha\source\repos\SistemaInventario\SistemaInventario\bin\Debug\net6.0\refs\Microsoft.Extensions.Logging.Abstractions.dll
@@ -396,3 +391,9 @@ C:\Users\sjcha\source\repos\SistemaInventario\SistemaInventario\bin\Debug\net6.0
 C:\Users\sjcha\source\repos\SistemaInventario\SistemaInventario\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
 C:\Users\sjcha\source\repos\SistemaInventario\SistemaInventario\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
 C:\Users\sjcha\source\repos\SistemaInventario\SistemaInventario\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\sjcha\source\repos\SistemaInventario\SistemaInventario\bin\Debug\net6.0\SistemaInventario.AccesoDatos.dll
+C:\Users\sjcha\source\repos\SistemaInventario\SistemaInventario\bin\Debug\net6.0\SistemaInventario.Modelo.dll
+C:\Users\sjcha\source\repos\SistemaInventario\SistemaInventario\bin\Debug\net6.0\SistemaInventario.Utilidades.dll
+C:\Users\sjcha\source\repos\SistemaInventario\SistemaInventario\bin\Debug\net6.0\SistemaInventario.AccesoDatos.pdb
+C:\Users\sjcha\source\repos\SistemaInventario\SistemaInventario\bin\Debug\net6.0\SistemaInventario.Modelo.pdb
+C:\Users\sjcha\source\repos\SistemaInventario\SistemaInventario\bin\Debug\net6.0\SistemaInventario.Utilidades.pdb
