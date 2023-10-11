@@ -3220,19 +3220,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\sjcha\\.nuget\\packages\\": {}
+    "C:\\Users\\Brandon\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sjcha\\source\\repos\\SistemaInventario\\SistemaInventario\\SistemaInventario.csproj",
+      "projectUniqueName": "C:\\Users\\Brandon\\Source\\Repos\\SistemaInventario\\SistemaInventario\\SistemaInventario.csproj",
       "projectName": "SistemaInventario",
-      "projectPath": "C:\\Users\\sjcha\\source\\repos\\SistemaInventario\\SistemaInventario\\SistemaInventario.csproj",
-      "packagesPath": "C:\\Users\\sjcha\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sjcha\\source\\repos\\SistemaInventario\\SistemaInventario\\obj\\",
+      "projectPath": "C:\\Users\\Brandon\\Source\\Repos\\SistemaInventario\\SistemaInventario\\SistemaInventario.csproj",
+      "packagesPath": "C:\\Users\\Brandon\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Brandon\\Source\\Repos\\SistemaInventario\\SistemaInventario\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\sjcha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Brandon\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
