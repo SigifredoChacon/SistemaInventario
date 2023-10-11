@@ -1,0 +1,10 @@
+[Bb]in/
+[Oo]bj/
+*.[Bb][Aa][Kk]
+*.[Dd][Bb][Cc][Ll][Oo][Gg]
+.vs/
+*.suo
+*.user
+.vscode/
+/logs/
+/testresults/
