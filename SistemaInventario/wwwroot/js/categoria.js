@@ -41,22 +41,21 @@ function loadDataTable() {
                 "data": "id",
                 "render": function (data) {
                     return `
-                        <div class="text-center"> 
-                            <a href="/Admin/Categoria/Upsert/${data}" class="btn btn-success text-white" style="cursor:pointer">
-                                <i class="bi bi-pencil-square"></i>
-                            </a>
-                            <a onclick=Delete("/Admin/Categoria/Delete/${data}") class="btn btn-danger text-white" style="cursor:pointer">
+                        <div class="text-center">
+                           <a href="/Admin/Categoria/Upsert/${data}" class="btn btn-success text-white" style="cursor:pointer">
+                              <i class="bi bi-pencil-square"></i>  
+                           </a>
+                           <a onclick=Delete("/Admin/Categoria/Delete/${data}") class="btn btn-danger text-white" style="cursor:pointer">
                                 <i class="bi bi-trash3-fill"></i>
-                            </a>
+                           </a> 
                         </div>
                     `;
                 }, "width": "20%"
             }
-            ]
+         ]
+
     });
 }
-
-
 
 function Delete(url) {
 
@@ -77,10 +76,10 @@ function Delete(url) {
                         datatable.ajax.reload();
                     }
                     else {
-                        toastr.error(data.sessage);
+                        toastr.error(data.message);
                     }
                 }
-            })
+            });
         }
     });
 }

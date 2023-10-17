@@ -1,4 +1,4 @@
-﻿using SistemaInventario.Modelo;
+﻿using SistemaInventario.Modelos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +9,6 @@ namespace SistemaInventario.AccesoDatos.Repositorio.IRepositorio
 {
     public interface ICategoriaRepositorio : IRepositorio<Categoria>
     {
-
         void Actualizar(Categoria categoria);
 
     }
