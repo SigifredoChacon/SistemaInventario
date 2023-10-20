@@ -12752,19 +12752,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Brandon\\.nuget\\packages\\": {}
+    "C:\\Users\\sjcha\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Brandon\\Source\\Repos\\SistemaInventario\\SistemaInventario\\SistemaInventario.csproj",
+      "projectUniqueName": "C:\\Users\\sjcha\\Source\\Repos\\SistemaInventario\\SistemaInventario\\SistemaInventario.csproj",
       "projectName": "SistemaInventario",
-      "projectPath": "C:\\Users\\Brandon\\Source\\Repos\\SistemaInventario\\SistemaInventario\\SistemaInventario.csproj",
-      "packagesPath": "C:\\Users\\Brandon\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Brandon\\Source\\Repos\\SistemaInventario\\SistemaInventario\\obj\\",
+      "projectPath": "C:\\Users\\sjcha\\Source\\Repos\\SistemaInventario\\SistemaInventario\\SistemaInventario.csproj",
+      "packagesPath": "C:\\Users\\sjcha\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\sjcha\\Source\\Repos\\SistemaInventario\\SistemaInventario\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Brandon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\sjcha\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -12778,14 +12778,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Brandon\\Source\\Repos\\SistemaInventario\\SistemaInventario.AccesoDatos\\SistemaInventario.AccesoDatos.csproj": {
-              "projectPath": "C:\\Users\\Brandon\\Source\\Repos\\SistemaInventario\\SistemaInventario.AccesoDatos\\SistemaInventario.AccesoDatos.csproj"
+            "C:\\Users\\sjcha\\Source\\Repos\\SistemaInventario\\SistemaInventario.AccesoDatos\\SistemaInventario.AccesoDatos.csproj": {
+              "projectPath": "C:\\Users\\sjcha\\Source\\Repos\\SistemaInventario\\SistemaInventario.AccesoDatos\\SistemaInventario.AccesoDatos.csproj"
             },
-            "C:\\Users\\Brandon\\Source\\Repos\\SistemaInventario\\SistemaInventario.Modelo\\SistemaInventario.Modelo.csproj": {
-              "projectPath": "C:\\Users\\Brandon\\Source\\Repos\\SistemaInventario\\SistemaInventario.Modelo\\SistemaInventario.Modelo.csproj"
+            "C:\\Users\\sjcha\\Source\\Repos\\SistemaInventario\\SistemaInventario.Modelo\\SistemaInventario.Modelo.csproj": {
+              "projectPath": "C:\\Users\\sjcha\\Source\\Repos\\SistemaInventario\\SistemaInventario.Modelo\\SistemaInventario.Modelo.csproj"
             },
-            "C:\\Users\\Brandon\\Source\\Repos\\SistemaInventario\\SistemaInventario.Utilidades\\SistemaInventario.Utilidades.csproj": {
-              "projectPath": "C:\\Users\\Brandon\\Source\\Repos\\SistemaInventario\\SistemaInventario.Utilidades\\SistemaInventario.Utilidades.csproj"
+            "C:\\Users\\sjcha\\Source\\Repos\\SistemaInventario\\SistemaInventario.Utilidades\\SistemaInventario.Utilidades.csproj": {
+              "projectPath": "C:\\Users\\sjcha\\Source\\Repos\\SistemaInventario\\SistemaInventario.Utilidades\\SistemaInventario.Utilidades.csproj"
             }
           }
         }
