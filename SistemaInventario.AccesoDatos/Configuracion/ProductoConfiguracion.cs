@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using SistemaInventario.Modelos;
+using SistemaInventario.Modelo;
 using System;
 using System.Collections.Generic;
 using System.Linq;

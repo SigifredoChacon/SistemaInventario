@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SistemaInventario.AccesoDatos.Repositorio.IRepositorio;
-using SistemaInventario.Modelos;
-using SistemaInventario.Modelos.ViewModels;
+using SistemaInventario.Modelo;
+using SistemaInventario.Modelo.ViewModels;
 using SistemaInventario.Utilidades;
 
 namespace SistemaInventario.Areas.Admin.Controllers

@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc.Rendering;
-using SistemaInventario.Modelos;
+using SistemaInventario.Modelo;
 using System;
 using System.Collections.Generic;
 using System.Linq;

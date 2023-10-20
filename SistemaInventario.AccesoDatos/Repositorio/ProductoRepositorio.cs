@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc.Rendering;
 using SistemaInventario.AccesoDatos.Data;
 using SistemaInventario.AccesoDatos.Repositorio.IRepositorio;
-using SistemaInventario.Modelos;
+using SistemaInventario.Modelo;
 using System;
 using System.Collections.Generic;
 using System.Linq;

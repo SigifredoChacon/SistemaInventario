@@ -4,10 +4,8 @@
 
 namespace SistemaInventario.AccesoDatos.Migrations
 {
-    /// <inheritdoc />
     public partial class AgregarProductoMigracion : Migration
     {
-        /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
@@ -62,7 +60,6 @@ namespace SistemaInventario.AccesoDatos.Migrations
                 column: "PadreId");
         }
 
-        /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(

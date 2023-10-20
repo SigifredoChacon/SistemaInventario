@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SistemaInventario.Modelos
+namespace SistemaInventario.Modelo
 {
     public class Producto
     {

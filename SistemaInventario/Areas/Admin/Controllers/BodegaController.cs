@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SistemaInventario.AccesoDatos.Repositorio.IRepositorio;
-using SistemaInventario.Modelos;
+using SistemaInventario.Modelo;
 using SistemaInventario.Utilidades;
 
 namespace SistemaInventario.Areas.Admin.Controllers
@@ -13,6 +13,7 @@ namespace SistemaInventario.Areas.Admin.Controllers
 
         public BodegaController(IUnidadTrabajo unidadTrabajo)
         {
+
             _unidadTrabajo = unidadTrabajo;
         }
 
@@ -25,21 +26,21 @@ namespace SistemaInventario.Areas.Admin.Controllers
         {
             Bodega bodega = new Bodega();
 
-            if(id== null)
+            if(id == null)
             {
-                // Crear una nueva Bodega
+                //Crear nueva Bodega
                 bodega.Estado = true;
                 return View(bodega);
             }
-            // Actualizamos Bodega
+            //Actualizamos Bodega
             bodega = await _unidadTrabajo.Bodega.Obtener(id.GetValueOrDefault());
-            if(bodega ==null)
+            if(bodega == null)
             {
                 return NotFound();
             }
             return View(bodega);
+            
         }
-
 
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -57,13 +58,13 @@ namespace SistemaInventario.Areas.Admin.Controllers
                     _unidadTrabajo.Bodega.Actualizar(bodega);
                     TempData[DS.Exitosa] = "Bodega actualizada Exitosamente";
                 }
+
                 await _unidadTrabajo.Guardar();
                 return RedirectToAction(nameof(Index));
             }
             TempData[DS.Error] = "Error al grabar Bodega";
             return View(bodega);
         }
-
 
         #region API
 
@@ -78,13 +79,15 @@ namespace SistemaInventario.Areas.Admin.Controllers
         public async Task<IActionResult> Delete(int id)
         {
             var bodegaDb = await _unidadTrabajo.Bodega.Obtener(id);
-            if(bodegaDb ==null)
+            if (bodegaDb == null)
             {
-                return Json(new { success = false, message = "Error al borrar Bodega" });
+                return Json(new {success = false, message = "Error al borrar Bodega"});
             }
+
             _unidadTrabajo.Bodega.Remover(bodegaDb);
             await _unidadTrabajo.Guardar();
             return Json(new { success = true, message = "Bodega borrada exitosamente" });
+
         }
 
         [ActionName("ValidarNombre")]
@@ -92,22 +95,20 @@ namespace SistemaInventario.Areas.Admin.Controllers
         {
             bool valor = false;
             var lista = await _unidadTrabajo.Bodega.ObtenerTodos();
-            if(id==0)
+            if(id == 0)
             {
                 valor = lista.Any(b => b.Nombre.ToLower().Trim() == nombre.ToLower().Trim());
             }
             else
             {
-                valor = lista.Any(b => b.Nombre.ToLower().Trim() == nombre.ToLower().Trim() && b.Id !=id);
+                valor = lista.Any(b => b.Nombre.ToLower().Trim() == nombre.ToLower().Trim() && b.Id != id);
             }
-            if(valor)
+            if (valor)
             {
                 return Json(new { data = true });
             }
             return Json(new { data = false });
-
         }
-
         #endregion
 
     }

@@ -1,6 +1,6 @@
 ﻿using SistemaInventario.AccesoDatos.Data;
 using SistemaInventario.AccesoDatos.Repositorio.IRepositorio;
-using SistemaInventario.Modelos;
+using SistemaInventario.Modelo;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,19 +14,19 @@ namespace SistemaInventario.AccesoDatos.Repositorio
 
         private readonly ApplicationDbContext _db;
 
-        public MarcaRepositorio(ApplicationDbContext db) : base(db)
+        public MarcaRepositorio(ApplicationDbContext db) : base(db) 
         {
             _db = db;
         }
 
         public void Actualizar(Marca marca)
         {
-           var marcaBD = _db.Marcas.FirstOrDefault(b => b.Id == marca.Id);
-            if(marcaBD != null)
+            var marcaBD = _db.Marcas.FirstOrDefault(b => b.Id == marca.Id);
+            if (marcaBD != null)
             {
-                marcaBD.Nombre= marca.Nombre;
+                marcaBD.Nombre = marca.Nombre;
                 marcaBD.Descripcion = marca.Descripcion;
-                marcaBD.Estado= marca.Estado;
+                marcaBD.Estado = marca.Estado;
                 _db.SaveChanges();
             }
         }

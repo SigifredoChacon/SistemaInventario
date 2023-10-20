@@ -1,4 +1,4 @@
-﻿using SistemaInventario.Modelos;
+﻿using SistemaInventario.Modelo;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +9,7 @@ namespace SistemaInventario.AccesoDatos.Repositorio.IRepositorio
 {
     public interface IBodegaRepositorio : IRepositorio<Bodega>
     {
+
         void Actualizar(Bodega bodega);
 
     }

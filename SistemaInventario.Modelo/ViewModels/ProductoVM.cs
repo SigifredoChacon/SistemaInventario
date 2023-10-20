@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SistemaInventario.Modelos.ViewModels
+namespace SistemaInventario.Modelo.ViewModels
 {
     public class ProductoVM
     {

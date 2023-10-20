@@ -4,14 +4,12 @@
 
 namespace SistemaInventario.AccesoDatos.Migrations
 {
-    /// <inheritdoc />
-    public partial class AgregarMarcaMigracion : Migration
+    public partial class AgregarBodegaMigracion : Migration
     {
-        /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Marcas",
+                name: "Bodegas",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -22,15 +20,14 @@ namespace SistemaInventario.AccesoDatos.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Marcas", x => x.Id);
+                    table.PrimaryKey("PK_Bodegas", x => x.Id);
                 });
         }
 
-        /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Marcas");
+                name: "Bodegas");
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SistemaInventario.AccesoDatos.Repositorio.IRepositorio;
-using SistemaInventario.Modelos;
+using SistemaInventario.Modelo;
 using SistemaInventario.Utilidades;
 
 namespace SistemaInventario.Areas.Admin.Controllers
@@ -12,7 +12,8 @@ namespace SistemaInventario.Areas.Admin.Controllers
         private readonly IUnidadTrabajo _unidadTrabajo;
 
         public CategoriaController(IUnidadTrabajo unidadTrabajo)
-        {
+        { 
+        
             _unidadTrabajo = unidadTrabajo;
         }
 
@@ -25,21 +26,21 @@ namespace SistemaInventario.Areas.Admin.Controllers
         {
             Categoria categoria = new Categoria();
 
-            if(id== null)
+            if(id == null)
             {
-                // Crear una nueva Bodega
+                //Crear nueva Bodega
                 categoria.Estado = true;
                 return View(categoria);
             }
-            // Actualizamos Bodega
+            //Actualizamos Bodega
             categoria = await _unidadTrabajo.Categoria.Obtener(id.GetValueOrDefault());
-            if(categoria ==null)
+            if(categoria == null)
             {
                 return NotFound();
             }
             return View(categoria);
+            
         }
-
 
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -57,13 +58,13 @@ namespace SistemaInventario.Areas.Admin.Controllers
                     _unidadTrabajo.Categoria.Actualizar(categoria);
                     TempData[DS.Exitosa] = "Categoria actualizada Exitosamente";
                 }
+
                 await _unidadTrabajo.Guardar();
                 return RedirectToAction(nameof(Index));
             }
             TempData[DS.Error] = "Error al grabar Categoria";
             return View(categoria);
         }
-
 
         #region API
 
@@ -78,13 +79,15 @@ namespace SistemaInventario.Areas.Admin.Controllers
         public async Task<IActionResult> Delete(int id)
         {
             var categoriaDb = await _unidadTrabajo.Categoria.Obtener(id);
-            if(categoriaDb == null)
+            if (categoriaDb == null)
             {
-                return Json(new { success = false, message = "Error al borrar Categoria" });
+                return Json(new {success = false, message = "Error al borrar Categoria"});
             }
+
             _unidadTrabajo.Categoria.Remover(categoriaDb);
             await _unidadTrabajo.Guardar();
             return Json(new { success = true, message = "Categoria borrada exitosamente" });
+
         }
 
         [ActionName("ValidarNombre")]
@@ -92,22 +95,20 @@ namespace SistemaInventario.Areas.Admin.Controllers
         {
             bool valor = false;
             var lista = await _unidadTrabajo.Categoria.ObtenerTodos();
-            if(id==0)
+            if(id == 0)
             {
                 valor = lista.Any(b => b.Nombre.ToLower().Trim() == nombre.ToLower().Trim());
             }
             else
             {
-                valor = lista.Any(b => b.Nombre.ToLower().Trim() == nombre.ToLower().Trim() && b.Id !=id);
+                valor = lista.Any(b => b.Nombre.ToLower().Trim() == nombre.ToLower().Trim() && b.Id != id);
             }
-            if(valor)
+            if (valor)
             {
                 return Json(new { data = true });
             }
             return Json(new { data = false });
-
         }
-
         #endregion
 
     }

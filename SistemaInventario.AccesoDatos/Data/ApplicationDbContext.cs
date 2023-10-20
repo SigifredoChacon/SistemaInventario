@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using SistemaInventario.Modelos;
+using SistemaInventario.Modelo;
 using System.Reflection;
 
 namespace SistemaInventario.AccesoDatos.Data
@@ -15,7 +15,6 @@ namespace SistemaInventario.AccesoDatos.Data
         public DbSet<Bodega> Bodegas { get; set; }
         public DbSet<Categoria> Categorias { get; set; }
         public DbSet<Marca> Marcas { get; set; }
-
         public DbSet<Producto> Productos { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
@@ -23,6 +22,5 @@ namespace SistemaInventario.AccesoDatos.Data
             base.OnModelCreating(builder);
             builder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
         }
-
     }
 }

@@ -4,10 +4,8 @@
 
 namespace SistemaInventario.AccesoDatos.Migrations
 {
-    /// <inheritdoc />
     public partial class AgregarCategoriaMigracion : Migration
     {
-        /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
@@ -26,7 +24,6 @@ namespace SistemaInventario.AccesoDatos.Migrations
                 });
         }
 
-        /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
