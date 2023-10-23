@@ -25,7 +25,7 @@ namespace SistemaInventario.Modelo
         [Required]
         public DateTime FechaFinal { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "La bodega es Obligatoria")]
         public int BodegaId { get; set; }
 
 

@@ -24,6 +24,8 @@ namespace SistemaInventario.AccesoDatos.Data
 
         public DbSet<InventarioDetalle> InventarioDetalles { get; set; }
 
+        public DbSet<KardexInventario> KardexInventarios { get; set; }
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
