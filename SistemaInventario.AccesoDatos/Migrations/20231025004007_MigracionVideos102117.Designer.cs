@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SistemaInventario.AccesoDatos.Data;
 
@@ -11,9 +12,10 @@ using SistemaInventario.AccesoDatos.Data;
 namespace SistemaInventario.AccesoDatos.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20231025004007_MigracionVideos102117")]
+    partial class MigracionVideos102117
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -278,33 +280,6 @@ namespace SistemaInventario.AccesoDatos.Migrations
                     b.ToTable("BodegasProductos");
                 });
 
-            modelBuilder.Entity("SistemaInventario.Modelo.CarroCompra", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<int>("Cantidad")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ProductoId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("UsuarioAplicacionId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ProductoId");
-
-                    b.HasIndex("UsuarioAplicacionId");
-
-                    b.ToTable("CarroCompras");
-                });
-
             modelBuilder.Entity("SistemaInventario.Modelo.Categoria", b =>
                 {
                     b.Property<int>("Id")
@@ -329,70 +304,6 @@ namespace SistemaInventario.AccesoDatos.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Categorias");
-                });
-
-            modelBuilder.Entity("SistemaInventario.Modelo.Compania", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<string>("ActualizadoPorId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<int>("BodegaVentaId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Ciudad")
-                        .IsRequired()
-                        .HasMaxLength(60)
-                        .HasColumnType("nvarchar(60)");
-
-                    b.Property<string>("CreadoPorId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("Descripcion")
-                        .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
-
-                    b.Property<string>("Direccion")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
-
-                    b.Property<DateTime>("FechaActualizacion")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime>("FechaCreacion")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Nombre")
-                        .IsRequired()
-                        .HasMaxLength(80)
-                        .HasColumnType("nvarchar(80)");
-
-                    b.Property<string>("Pais")
-                        .IsRequired()
-                        .HasMaxLength(60)
-                        .HasColumnType("nvarchar(60)");
-
-                    b.Property<string>("Telefono")
-                        .IsRequired()
-                        .HasMaxLength(40)
-                        .HasColumnType("nvarchar(40)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ActualizadoPorId");
-
-                    b.HasIndex("BodegaVentaId");
-
-                    b.HasIndex("CreadoPorId");
-
-                    b.ToTable("Companias");
                 });
 
             modelBuilder.Entity("SistemaInventario.Modelo.Inventario", b =>
@@ -532,102 +443,6 @@ namespace SistemaInventario.AccesoDatos.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Marcas");
-                });
-
-            modelBuilder.Entity("SistemaInventario.Modelo.Orden", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<string>("Carier")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Ciudad")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Direccion")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("EstadoOrden")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("EstadoPago")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("FechaEnvio")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime>("FechaMaximoPago")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime>("FechaOrden")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime>("FechaPago")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("NombreCliente")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("NumeroEnvio")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Pais")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Telefono")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<double>("TotalOrden")
-                        .HasColumnType("float");
-
-                    b.Property<string>("TransaccionId")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("UsuarioAplicacionId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("UsuarioAplicacionId");
-
-                    b.ToTable("Ordenes");
-                });
-
-            modelBuilder.Entity("SistemaInventario.Modelo.OrdenDetalle", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<int>("Cantidad")
-                        .HasColumnType("int");
-
-                    b.Property<int>("OrdenId")
-                        .HasColumnType("int");
-
-                    b.Property<double>("Precio")
-                        .HasColumnType("float");
-
-                    b.Property<int>("ProductoId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("OrdenId");
-
-                    b.HasIndex("ProductoId");
-
-                    b.ToTable("OrdenDetalles");
                 });
 
             modelBuilder.Entity("SistemaInventario.Modelo.Producto", b =>
@@ -782,50 +597,6 @@ namespace SistemaInventario.AccesoDatos.Migrations
                     b.Navigation("Producto");
                 });
 
-            modelBuilder.Entity("SistemaInventario.Modelo.CarroCompra", b =>
-                {
-                    b.HasOne("SistemaInventario.Modelo.Producto", "Producto")
-                        .WithMany()
-                        .HasForeignKey("ProductoId")
-                        .OnDelete(DeleteBehavior.NoAction)
-                        .IsRequired();
-
-                    b.HasOne("SistemaInventario.Modelo.UsuarioAplicacion", "UsuarioAplicacion")
-                        .WithMany()
-                        .HasForeignKey("UsuarioAplicacionId")
-                        .OnDelete(DeleteBehavior.NoAction)
-                        .IsRequired();
-
-                    b.Navigation("Producto");
-
-                    b.Navigation("UsuarioAplicacion");
-                });
-
-            modelBuilder.Entity("SistemaInventario.Modelo.Compania", b =>
-                {
-                    b.HasOne("SistemaInventario.Modelo.UsuarioAplicacion", "ActualizadoPor")
-                        .WithMany()
-                        .HasForeignKey("ActualizadoPorId")
-                        .OnDelete(DeleteBehavior.NoAction);
-
-                    b.HasOne("SistemaInventario.Modelo.Bodega", "Bodega")
-                        .WithMany()
-                        .HasForeignKey("BodegaVentaId")
-                        .OnDelete(DeleteBehavior.NoAction)
-                        .IsRequired();
-
-                    b.HasOne("SistemaInventario.Modelo.UsuarioAplicacion", "CreadoPor")
-                        .WithMany()
-                        .HasForeignKey("CreadoPorId")
-                        .OnDelete(DeleteBehavior.NoAction);
-
-                    b.Navigation("ActualizadoPor");
-
-                    b.Navigation("Bodega");
-
-                    b.Navigation("CreadoPor");
-                });
-
             modelBuilder.Entity("SistemaInventario.Modelo.Inventario", b =>
                 {
                     b.HasOne("SistemaInventario.Modelo.Bodega", "Bodega")
@@ -881,36 +652,6 @@ namespace SistemaInventario.AccesoDatos.Migrations
                     b.Navigation("BodegaProducto");
 
                     b.Navigation("UsuarioAplicacion");
-                });
-
-            modelBuilder.Entity("SistemaInventario.Modelo.Orden", b =>
-                {
-                    b.HasOne("SistemaInventario.Modelo.UsuarioAplicacion", "UsuarioAplicacion")
-                        .WithMany()
-                        .HasForeignKey("UsuarioAplicacionId")
-                        .OnDelete(DeleteBehavior.NoAction)
-                        .IsRequired();
-
-                    b.Navigation("UsuarioAplicacion");
-                });
-
-            modelBuilder.Entity("SistemaInventario.Modelo.OrdenDetalle", b =>
-                {
-                    b.HasOne("SistemaInventario.Modelo.Orden", "Orden")
-                        .WithMany()
-                        .HasForeignKey("OrdenId")
-                        .OnDelete(DeleteBehavior.NoAction)
-                        .IsRequired();
-
-                    b.HasOne("SistemaInventario.Modelo.Producto", "Producto")
-                        .WithMany()
-                        .HasForeignKey("ProductoId")
-                        .OnDelete(DeleteBehavior.NoAction)
-                        .IsRequired();
-
-                    b.Navigation("Orden");
-
-                    b.Navigation("Producto");
                 });
 
             modelBuilder.Entity("SistemaInventario.Modelo.Producto", b =>
